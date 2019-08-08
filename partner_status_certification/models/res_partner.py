@@ -8,4 +8,4 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     status_certification_id = fields.Many2one('partner.status.certification')
-    is_organisation=fields.Boolean('Certified Organism')
+    certification_ids = fields.One2many('certification')
