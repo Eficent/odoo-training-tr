@@ -12,5 +12,3 @@ class PartnerCertificationStatus(models.Model):
     description = fields.Text(required=True)
 
 
-    organisation_ids = fields.Many2many(comodel_name='res.partner',relation='certification_organisation_rel',
-                                        column1='cert_id',column2='org_id')

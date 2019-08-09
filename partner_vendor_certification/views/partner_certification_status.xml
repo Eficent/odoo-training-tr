@@ -27,9 +27,6 @@
                     <group>
                         <field name="description"/>
                     </group>
-                     <group>
-                        <field name="organisation_ids"/>
-                    </group>
                 </sheet>
             </form>
         </field>
