@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="partner_legal_documents_view_list" model="ir.ui.view">
+        <field name="name">Legal Documents</field>
+        <field name="model">partner.legal.documents</field>
+        <field name="arch" type="xml">
+            <tree string="Legal Documents">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="date"/>
+                <field name="number"/>
+                <field name="letter"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="partner_legal_documents_view_form" model="ir.ui.view">
+        <field name="name">Legal Documents</field>
+        <field name="model">partner.legal.documents</field>
+        <field name="arch" type="xml">
+            <form string="Legal Documents">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="date"/>
+                        <field name="number"/>
+                        <field name="letter"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record id="partner_legal_documents" model="ir.actions.act_window">
+         <field name="name">Legal Documents</field>
+         <field name="res_model">partner.legal.documents</field>
+         <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        name="Legal Documents"
+        id="res_partner_legal_documents_menu"
+        sequence="5"
+        action="partner_legal_documents"/>
+</odoo>

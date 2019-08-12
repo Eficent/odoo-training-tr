@@ -16,3 +16,4 @@ class Certification(models.Model):
         ('noneucer', 'Non-Eu Certification')
     ])
     entity_id = fields.Many2one('res.partner')
+

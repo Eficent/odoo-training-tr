@@ -7,5 +7,7 @@ from odoo import models, fields
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    status_certification_id = fields.Many2one('partner.status.certification')
-    certification_ids = fields.One2many('certification')
+    status = fields.Selection([('approved', 'Approved'),
+         ('progress', 'In progress'),
+        ('nonapproved', 'Non-approved')])
+

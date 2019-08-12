@@ -2,17 +2,17 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    'name': 'Partner Status Certification',
-    'summary': "Adds status certification to partners in order to evaluate .",
+    'name': 'Legal documents',
+    'summary': "Compiles legal documents of people involved in the corportation.",
     'author': "Eficent, Odoo Community Association (OCA)",
-    'website': "https://github.com/OCA/partner-contact",
-    'category': 'Customer Relationship Management',
+    'website': "https://github.com/<my_github_user>",
+    'category': 'Human Resources Management',
     'version': '12.0.1.0.0',
     'license': 'AGPL-3',
-    'depends': ['contacts','certification'],
+    'depends': ['contacts'],
     'data': ["security/ir.model.access.csv",
+             "views/partner_legal_documents_view.xml",
              "views/res_partner.xml"
              ],
     'development_status': 'Beta',
-    'maintainers': ['ceeficent'],
-}
+    'maintainers': ['ceeficent']}
