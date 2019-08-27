@@ -5,6 +5,7 @@
 import odoo.tests.common as common
 
 
+
 class TestPartnerCertification(common.TransactionCase):
 
     def setUp(self):
@@ -20,4 +21,4 @@ class TestPartnerCertification(common.TransactionCase):
             'description': 'High quality product'})
 
         self.partner.certification_status_id=certification_status
-        self.assertEqual(self.partner.certification_status_id,certification_status)
+        self.assertEqual(self.partner.certification_status_id, certification_status)

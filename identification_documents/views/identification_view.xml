@@ -38,6 +38,5 @@
     <menuitem
         name="Identity Documents"
         id="identification_menu"
-        sequence="5"
         action="identification_action"/>
 </odoo>

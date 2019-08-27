@@ -1,5 +1,5 @@
-
-from odoo import fields,models
+from odoo.exceptions import UserError
+from odoo import fields,models,api
 
 
 class IdentificationDocument (models.Model):
@@ -14,10 +14,14 @@ class IdentificationDocument (models.Model):
     ])
     date = fields.Date()
 
+    ref_doc_id = fields.Reference(
+        selection='_referencable_models',
+        string='Reference Document')
+
     @api.constrains('number')
     def check_number(self):
         if self.number == ' ':
-            raise ValidationError('Missing field')
-
+            msg = 'Empty field'
+            raise UserError(msg)
 
 
