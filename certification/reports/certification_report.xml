@@ -12,6 +12,7 @@
         </field>
     </record>
 
+
     <record id="view_certification_report_graph" model="ir.ui.view">
         <field name="name">certification.report.graph</field>
         <field name="model">certification.report</field>

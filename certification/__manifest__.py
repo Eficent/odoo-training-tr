@@ -17,7 +17,9 @@
              'views/standard_view.xml',
              'views/certification_bodies.xml',
              'wizard/certification_wizard.xml',
-             'reports/certification_report.xml'
+             'reports/certification_report.xml',
+             'reports/certification_report_pdf.xml',
+             'reports/certification_template_pdf.xml',
              ],
     'demo': ['demo/certification_demo.xml'],
     'development_status': 'Beta',

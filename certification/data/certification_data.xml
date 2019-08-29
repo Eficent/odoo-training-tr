@@ -5,8 +5,8 @@
         <field name="entity">True</field>
     </record>
     <record id="certification_demo" model="certification">
-        <field name="name">Demo EU Certification</field>
-        <field name="date">2019-12-31</field>
+        <field name="number">365A</field>
+        <field name="date">2019-06-09</field>
         <field name="type">eucer</field>
         <field name="entity_id" eval="ref('entity_demo')"/>
     </record>
