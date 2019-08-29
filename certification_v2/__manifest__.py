@@ -9,13 +9,15 @@
     'category': 'Certification Management',
     'version': '12.0.1.0.0',
     'license': 'AGPL-3',
-    'depends': ['base'],
+    'depends': ['base', 'contacts'],
     'data': ['security/ir.model.access.csv',
              'views/certification_view.xml',
              'views/res_partner_view.xml',
              'views/standard_view.xml',
              'wizard/certification_wizard.xml',
              'security/certification_security.xml',
+             'reports/certification_report.xml',
+             'reports/certification_template.xml'
              ],
     'demo':
         ['demo/certification_data.xml',
