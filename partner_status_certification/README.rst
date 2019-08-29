@@ -1,1 +1,0 @@
-Partner Status Certiniification

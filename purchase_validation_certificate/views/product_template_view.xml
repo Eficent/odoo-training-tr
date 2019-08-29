@@ -1,0 +1,17 @@
+<!-- Copyright 2019 Patrick Wilson <patrickraymondwilson@gmail.com>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+    <record id="view_partner_list" model="ir.ui.view">
+        <field name="name">product.required.certificate.list</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+             <xpath expr="//page[@name='purchase']" position="insied">
+                     <page name ="required_certification" string="Required Certifications">
+                         <field name="certification_ids"/>
+                     </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
