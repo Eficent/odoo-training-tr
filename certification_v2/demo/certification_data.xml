@@ -13,18 +13,125 @@
         <field name="is_certification_body">False</field>
     </record>
 
-     <record id ="standard_demo"
+<!--    STANDARDS DEMO-->
+     <record id ="AS9100:2015"
             model="certification.standard">
-        <field name="name">Standard Demo</field>
+        <field name="name">AS9100:2015</field>
     </record>
 
-    <record id ="certification_demo"
-            model="certification">
-        <field name="number">Demo Certification</field>
-        <field name="date">2019-12-31</field>
-        <field name="standard_id" eval="ref('standard_demo')"/>
+     <record id ="AS9100:2018"
+            model="certification.standard">
+        <field name="name">AS9100:2018</field>
+    </record>
+
+     <record id ="AS9107:2018"
+            model="certification.standard">
+        <field name="name">AS9107:2018</field>
+    </record>
+
+     <record id ="AS9110:2014"
+            model="certification.standard">
+        <field name="name">AS9110:2014</field>
+    </record>
+
+     <record id ="AS9120:2016"
+            model="certification.standard">
+        <field name="name">AS9120:2016</field>
+    </record>
+
+     <record id ="AS9134:2017"
+            model="certification.standard">
+        <field name="name">AS9134:2017</field>
+    </record>
+
+     <record id ="AS9162:2015"
+            model="certification.standard">
+        <field name="name">AS9162:2015</field>
+    </record>
+
+<!--    CERTIFICATIONS DEMO-->
+    <record id ="certification_demo_1" model="certification">
+        <field name="number">50380</field>
+        <field name="date">2021-12-31</field>
+        <field name="standard_id" eval="ref('AS9100:2018')"/>
         <field name="entity_id" eval="ref('entity_demo')"/>
         <field name="owner_id" eval="ref('supplier_demo')"/>
     </record>
+
+     <record id ="certification_demo_2" model="certification">
+        <field name="number">60897</field>
+        <field name="date">2019-02-05</field>
+        <field name="standard_id" eval="ref('AS9100:2015')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_3" model="certification">
+        <field name="number">11789</field>
+        <field name="date">2020-10-01</field>
+        <field name="standard_id" eval="ref('AS9120:2016')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_4" model="certification">
+        <field name="number">54987</field>
+        <field name="date">2019-05-13</field>
+        <field name="standard_id" eval="ref('AS9100:2015')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_5" model="certification">
+        <field name="number">34201</field>
+        <field name="date">2022-12-11</field>
+        <field name="standard_id" eval="ref('AS9134:2017')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_6" model="certification">
+        <field name="number">36984</field>
+        <field name="date">2020-08-18</field>
+        <field name="standard_id" eval="ref('AS9162:2015')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_7" model="certification">
+        <field name="number">67210</field>
+        <field name="date">2020-04-13</field>
+        <field name="standard_id" eval="ref('AS9120:2016')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_8" model="certification">
+        <field name="number">38415</field>
+        <field name="date">2023-03-06</field>
+        <field name="standard_id" eval="ref('AS9107:2018')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_9" model="certification">
+        <field name="number">94510</field>
+        <field name="date">2022-05-01</field>
+        <field name="standard_id" eval="ref('AS9100:2018')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+    <record id ="certification_demo_10" model="certification">
+        <field name="number">51487</field>
+        <field name="date">2020-07-26</field>
+        <field name="standard_id" eval="ref('AS9107:2018')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+
+
+
+
 
 </odoo>
