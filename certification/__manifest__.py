@@ -21,7 +21,7 @@
              'reports/certification_report_pdf.xml',
              'reports/certification_template_pdf.xml',
              ],
-    'demo': ['demo/certification_demo.xml'],
+    'demo': ['data/certification_data.xml'],
     'development_status': 'Beta',
     'maintainers': ['ceeficent']
 }

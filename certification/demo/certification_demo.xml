@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
-
+<odoo>
     <!--EMPLOYEES-->
-
     <record id ="employee_1"
             model="res.partner">
         <field name="name">Karl Acar</field>
@@ -62,7 +60,7 @@
         <field name="name">Azad Ayik</field>
         <field name="is_certification_body">False</field>
     </record>
-    
+
     <!--CERTIFICATION BODIES-->
 
     <record id ="entity_demo_1"
