@@ -16,8 +16,8 @@
              'views/standard_view.xml',
              'wizard/certification_wizard.xml',
              'security/certification_security.xml',
-             'reports/certification_report.xml',
-             'reports/certification_template.xml'
+             'reports/certification_report_pdf.xml',
+             'reports/certification_template_pdf.xml'
              ],
     'demo':
         ['demo/certification_data.xml',

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <report id="report_certification"
-        name="certification_v2.certification_template"
+    <report id="report_certification_pdf"
+        name="certification_v2.certification_template_pdf"
         model="certification"
         string="Certification"
         report_type="qweb-pdf" />
