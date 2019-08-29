@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
 
-     <record id ="entity_demo"
-            model="res.partner">
-        <field name="name">Entity Demo</field>
-        <field name="is_certification_body">True</field>
-    </record>
+    <!--EMPLOYEES-->
 
-    <record id ="supplier_demo"
+    <record id ="employee_1"
             model="res.partner">
-        <field name="name">Supplier Demo</field>
+        <field name="name">Karl Acar</field>
         <field name="is_certification_body">False</field>
     </record>
 
+    <record id ="employee_2"
+            model="res.partner">
+        <field name="name">Nuri Ak</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_3"
+            model="res.partner">
+        <field name="name">Ihan Baykara</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_4"
+            model="res.partner">
+        <field name="name">Aysel Cevdet</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_5"
+            model="res.partner">
+        <field name="name">Zeynep Buruk</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_6"
+            model="res.partner">
+        <field name="name">Melek Atan</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_7"
+            model="res.partner">
+        <field name="name">Osman Atalay</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_8"
+            model="res.partner">
+        <field name="name">Kerem Cerci</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_9"
+            model="res.partner">
+        <field name="name">Elma Ceren</field>
+        <field name="is_certification_body">False</field>
+    </record>
+
+    <record id ="employee_10"
+            model="res.partner">
+        <field name="name">Azad Ayik</field>
+        <field name="is_certification_body">False</field>
+    </record>
+    
     <!--CERTIFICATION BODIES-->
 
     <record id ="entity_demo_1"
@@ -26,7 +76,7 @@
         <field name="name">TURKAK Turkish Accreditation Agency</field>
         <field name="is_certification_body">True</field>
     </record>
-    
+
     <record id ="aea"
             model="res.partner">
         <field name="name">AEA Quality Advantage Corporation</field>
@@ -152,7 +202,7 @@
         <field name="number">60897</field>
         <field name="date">2019-02-05</field>
         <field name="standard_id" eval="ref('AS9110:2014')"/>
-        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="entity_id" eval="ref('turkak')"/>
         <field name="owner_id" eval="ref('limatech')"/>
     </record>
 
@@ -176,7 +226,7 @@
         <field name="number">34201</field>
         <field name="date">2022-12-11</field>
         <field name="standard_id" eval="ref('AS9134:2017')"/>
-        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="entity_id" eval="ref('turkak')"/>
         <field name="owner_id" eval="ref('abc_hydraulique')"/>
     </record>
 
@@ -184,7 +234,7 @@
         <field name="number">36984</field>
         <field name="date">2020-08-18</field>
         <field name="standard_id" eval="ref('AS9162:2015')"/>
-        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="entity_id" eval="ref('turkak')"/>
         <field name="owner_id" eval="ref('inespasa')"/>
     </record>
 
