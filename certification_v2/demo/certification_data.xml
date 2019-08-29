@@ -61,7 +61,7 @@
      <record id ="certification_demo_2" model="certification">
         <field name="number">60897</field>
         <field name="date">2019-02-05</field>
-        <field name="standard_id" eval="ref('AS9100:2015')"/>
+        <field name="standard_id" eval="ref('AS9110:2014')"/>
         <field name="entity_id" eval="ref('entity_demo')"/>
         <field name="owner_id" eval="ref('supplier_demo')"/>
     </record>
