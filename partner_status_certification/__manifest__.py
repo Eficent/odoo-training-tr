@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    'name': 'Certification Status v2',
+    'name': 'Certification Status ',
     'summary': "Adds a certification status to a supplier.",
     'author': "Eficent, Odoo Community Association (OCA)",
     'website': "https://github.com/OCA/partner-contact",

@@ -19,5 +19,5 @@ class TestPartnerCertification(common.TransactionCase):
             'name': 'AAA',
             'description': 'High quality product'})
 
-        self.partner.certification_status_id=certification_status
-        self.assertEqual(self.partner.certification_status_id,certification_status)
+        self.partner.certification_status_id = certification_status
+        self.assertEqual(self.partner.certification_status_id, certification_status)

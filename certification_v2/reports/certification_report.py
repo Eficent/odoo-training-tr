@@ -21,7 +21,7 @@ class CertificationReport(models.Model):
         select_str = """
            SELECT
                    rp.id AS id,
-                   rp.id AS entity_id,
+                   c.entity_id AS entity_id,
                    cs.id AS standard_id,
                    c.expiry_status AS expiry_status,
                    count(c.id) AS certification_count
@@ -46,7 +46,7 @@ class CertificationReport(models.Model):
         group_by_str = """
            GROUP BY
            rp.id,
-           rp.id,
+           c.entity_id,
            cs.id,
            c.expiry_status
        """
