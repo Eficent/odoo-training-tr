@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="identity_view_list" model="ir.ui.view">
+        <field name="name">Identity</field>
+        <field name="model">identity</field>
+        <field name="arch" type="xml">
+            <tree string="Identity">
+                <field name="employee_name"/>
+                <field name="type"/>
+                <field name="id_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="identity_form" model="ir.ui.view">
+        <field name="name">Identity</field>
+        <field name="model">identity</field>
+        <field name="arch" type="xml">
+            <form string="Identity">
+                <sheet>
+                    <group>
+                        <field name="employee_name"/>
+                        <field name="type"/>
+                        <field name="id_number"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="identity" model="ir.actions.act_window">
+        <field name="name">Identity</field>
+        <field name="res_model">identity</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            name="Identity"
+            id="identity_menu"
+            sequence="5"
+            action="identity"/>
+
+
+</odoo>
