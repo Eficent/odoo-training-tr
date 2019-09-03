@@ -27,6 +27,9 @@
                         <field name="standard_id"/>
                         <field name="entity_id" domain="[('is_certification_body','=','True')]"/>
                         <field name="owner_id"/>
+                        <field name="expiry_days"/>
+                        <field name="expiry_status"/>
+                        <button name="update_date_one_month" string="Update the validation date one month" type="object"/>
                     </group>
                 </sheet>
             </form>

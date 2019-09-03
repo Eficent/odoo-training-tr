@@ -20,8 +20,12 @@
         "base",
     ],
     "data": [
-        "views/identity.xml",
+        'security/identity_security.xml',
         'security/ir.model.access.csv',
+        "views/identity.xml",
+
     ],
+
+    'demo': ['demo/identity_data.xml'],
 
 }
