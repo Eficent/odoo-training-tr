@@ -46,3 +46,6 @@ class Certification(models.Model):
         self.ensure_one()
         if self.date:
             self.write({'date': self.date + timedelta(days=30)})
+
+
+

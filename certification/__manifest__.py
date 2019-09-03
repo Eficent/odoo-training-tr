@@ -26,7 +26,6 @@
         'security/certification_security.xml',
         "views/res_partner.xml",
     ],
-
     'demo': ['demo/certification_data.xml'],
 
 }
