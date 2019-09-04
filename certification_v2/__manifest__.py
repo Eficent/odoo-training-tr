@@ -14,7 +14,6 @@
              'views/certification_view.xml',
              'views/res_partner_view.xml',
              'views/standard_view.xml',
-             'wizard/certification_wizard.xml',
              'security/certification_security.xml',
              'reports/certification_report_pdf.xml',
              'reports/certification_template_pdf.xml',

@@ -14,10 +14,6 @@ class IdentificationDocument (models.Model):
     ])
     date = fields.Date()
 
-    ref_doc_id = fields.Reference(
-        selection='_referencable_models',
-        string='Reference Document')
-
     @api.constrains('number')
     def check_number(self):
         if self.number == ' ':
