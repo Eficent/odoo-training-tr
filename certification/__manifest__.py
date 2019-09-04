@@ -25,6 +25,7 @@
         'security/ir.model.access.csv',
         'security/certification_security.xml',
         "views/res_partner.xml",
+        "reports/certification_view.xml",
     ],
     'demo': ['demo/certification_data.xml'],
 

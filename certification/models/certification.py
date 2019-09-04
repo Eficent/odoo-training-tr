@@ -22,7 +22,7 @@ class Certification(models.Model):
     expiry_status = fields.Selection([
         ('expired', "Expired"),
         ('available', "Available")
-    ], readonly=True, compute='_compute_expiry_days')
+    ], readonly=True, compute='_compute_expiry_days', store=True)
 
     @api.constrains('entity_id')
     def _check_entity_id(self):
