@@ -2,7 +2,7 @@ from odoo.exceptions import UserError
 from odoo import fields,models,api
 
 
-class Identification(models.Model):
+class IdentificationDocuments(models.Model):
     _name = "identification.documents"
 
     employee_id = fields.Many2one('res.partner')

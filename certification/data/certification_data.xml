@@ -65,7 +65,7 @@
             <field name="name">Entity Demo</field>
             <field name="is_certification_body">True</field>
         </record>
-AS
+
             <record id ="turkak"
                 model="res.partner">
             <field name="name">TURKAK Turkish Accreditation Agency</field>

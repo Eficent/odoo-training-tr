@@ -9,13 +9,14 @@ from datetime import timedelta
 class Certification(models.Model):
     _name = 'certification'
     _description = 'Certification'
+    # _rec_name = 'CertificationDoc'
 
     number = fields.Char(required=True)
     date = fields.Date(string='Validation Date', required=True)
     description = fields.Text(string='Validation Details')
-    standard_id = fields.Many2one('certification.standard', required=True)
-    owner_id = fields.Many2one("res.partner", required=True)
-    entity_id = fields.Many2one('res.partner', required=True)
+    standard_id = fields.Many2one('certification.standard')
+    owner_id = fields.Many2one("res.partner")
+    entity_id = fields.Many2one('res.partner')
     expiry_days = fields.Integer('Expiry Days', compute='_compute_expiry_days',
                                  readonly=True)
     expiry_status = fields.Selection([

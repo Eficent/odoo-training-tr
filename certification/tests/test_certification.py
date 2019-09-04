@@ -3,10 +3,10 @@
 # Copyright 2016 Tecnativa - Vicent Cubells
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.tests.common import TransactionCase
+import odoo.tests.common as common
 
 
-class TestCertification(TransactionCase):
+class TestCertification(common.TransactionCase):
     def setUp(self):
         super(TestCertification, self).setUp()
         self.res_partner = self.env['res.partner']
