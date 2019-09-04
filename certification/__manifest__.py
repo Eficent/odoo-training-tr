@@ -26,6 +26,10 @@
         'security/certification_security.xml',
         "views/res_partner.xml",
         "reports/certification_view.xml",
+        "reports/report_certification_pdf.xml",
+        "reports/certification_template_pdf.xml",
+
+
     ],
     'demo': ['demo/certification_data.xml'],
 
