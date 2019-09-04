@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="incident_view_list" model="ir.ui.view">
+        <field name="name">Incident</field>
+        <field name="model">incident</field>
+        <field name="arch" type="xml">
+            <tree string="Incident">
+                <field name="name"/>
+                <field name="sla_day"/>
+                <field name="responsible_department"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="incident_form" model="ir.ui.view">
+        <field name="name">Incident</field>
+        <field name="model">incident</field>
+        <field name="arch" type="xml">
+            <form string="Incident">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="sla_day"/>
+                        <field name="responsible_department"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="incident_action" model="ir.actions.act_window">
+        <field name="name">Incident</field>
+        <field name="res_model">incident</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            name="Incident"
+            id="incident_menu"
+            parent="help_desk_menu"
+            sequence="5"
+            action="incident_action"/>
+
+
+</odoo>
