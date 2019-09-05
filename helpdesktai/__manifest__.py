@@ -16,17 +16,17 @@
 
     ],
     "license": "AGPL-3",
-    'application': False,
+    'application': True,
     'installable': True,
     'auto_install': False,
     "depends": [
         "base",
     ],
     "data": [
+        "security/helpdesk_security.xml",
         "security/ir.model.access.csv",
         "views/incident.xml",
         "views/ticket.xml",
-        "helpdesk_security.xml",
 
     ],
 

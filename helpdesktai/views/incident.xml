@@ -38,6 +38,7 @@
             name="Incident"
             id="incident_menu"
             parent="help_desk_menu"
+            groups="group_helpdesk_manager"
             sequence="5"
             action="incident_action"/>
 
