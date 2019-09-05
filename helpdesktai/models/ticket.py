@@ -28,7 +28,7 @@ class Ticket(models.Model):
 
     sla_status = fields.Selection([('suitable', 'Suitable'),
                                    ('alert', 'Alert')],
-                                  string="SLA Status", required=True, compute='_compute_sla_status')
+                                  string="SLA Status", compute='_compute_sla_status')
 
     deadline_day = fields.Char('Deadline',compute='_compute_sla_status')
 

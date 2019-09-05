@@ -24,10 +24,14 @@
         <field name="arch" type="xml">
             <form string="Ticket">
                 <header>
-                    <button string="Open" name="open_ticket" type="object"/>
-                    <button string="In Progress" name="in_progress_ticket" type="object"/>
-                    <button string="Done" name="done_ticket" type="object"/>
-                    <button string="Cancel" name="cancel_ticket" type="object"/>
+                    <button string="Open" name="open_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'open')]}"/>
+                    <button string="In Progress" name="in_progress_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'in_progress')]}"/>
+                    <button string="Done" name="done_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'done')]}"/>
+                    <button string="Cancel" name="cancel_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'done')]}"/>
                 </header>
                 <sheet>
                     <group>
