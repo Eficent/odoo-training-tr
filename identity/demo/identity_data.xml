@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+    <record id="identity_demo" model="identity">
+        <field name="employee_name">3</field>
+        <field name="type">passport</field>
+        <field name="id_number">61</field>
+
+    </record>
+
+
+
+</odoo>

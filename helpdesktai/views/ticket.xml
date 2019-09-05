@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ticket_tree" model="ir.ui.view">
+        <field name="name">Ticket</field>
+        <field name="model">ticket</field>
+        <field name="arch" type="xml">
+            <tree string="Ticket">
+                <field name="status"/>
+                <field name="id" string="Ticket Number"/>
+                <field name="sla_status"/>
+                <field name="deadline_day"/>
+                <field name="subject"/>
+                <field name="incident_id"/>
+                <field name="priority"/>
+                <field name="responsible_department"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="ticket_form" model="ir.ui.view">
+        <field name="name">Ticket</field>
+        <field name="model">ticket</field>
+        <field name="arch" type="xml">
+            <form string="Ticket">
+                <header>
+                    <button string="Open" name="open_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'open')]}"/>
+                    <button string="In Progress" name="in_progress_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'in_progress')]}"/>
+                    <button string="Done" name="done_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'done')]}"/>
+                    <button string="Cancel" name="cancel_ticket" type="object"
+                            attrs="{'invisible': ['|', ('status', '=', 'cancel'), ('status', '=', 'done')]}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="id" string="Ticket Number"/>
+                            <field name="status" readonly="1"/>
+                            <field name="sla_status" readonly="1"/>
+                            <field name="deadline_day"/>
+
+                        </group>
+                        <group string=" ">
+                            <field name="incident_id"/>
+                            <field name="subject"/>
+                            <field name="priority"/>
+                            <field name="responsible_department"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- Hr Applicant Kanban View -->
+    <record model="ir.ui.view" id="ticket_kanban">
+        <field name="name">Ticket kanban</field>
+        <field name="model">ticket</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="status" class="o_kanban_applicant">
+                <field name="id" string="Ticket Number"/>
+                <field name="status"/>
+                <field name="priority"/>
+                <field name="incident_id"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div>
+                            <ul>
+
+                                Ticket Number:
+                                <field name="id" string="Ticket Number"/>
+                                <br></br>
+                                <field name="incident_id"/>
+                                <br></br>
+                                <field name="sla_status"/>
+                                <br></br>
+                                <field name="priority"/>
+                                <br></br>
+                                <field name="responsible_department"/>
+                                <br></br>
+                                Deadline:
+                                <field name="deadline_day"/>
+                                Days
+
+                            </ul>
+
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+    <record id="ticket_action" model="ir.actions.act_window">
+        <field name="name">Ticket</field>
+        <field name="res_model">ticket</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <menuitem
+            name="Help Desk"
+            id="help_desk_menu"
+            sequence="15"
+            action="ticket_action"/>
+
+
+</odoo>
